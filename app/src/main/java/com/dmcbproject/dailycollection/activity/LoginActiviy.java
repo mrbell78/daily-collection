@@ -22,11 +22,11 @@ public class LoginActiviy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_activiy);
 
-        spinner_brcode = findViewById(R.id.brcode_spiner);
+       /* spinner_brcode = findViewById(R.id.brcode_spiner);
 
         ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(branchname));
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,arrayList);
-        spinner_brcode.setAdapter(adapter);
+        spinner_brcode.setAdapter(adapter);*/
 
     }
 }
