@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    app:cardElevation="3dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    app:cardBackgroundColor="@android:color/white"
+    app:layout_goneMarginBottom="25dp"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/loginViewsMargin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#106A37"
+                android:layout_height="wrap_content"
+                android:text="Add Holiday Collection"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spiner"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/branch_codeid"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="20dp"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:hint="Date"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_baseline_edit_calendar_24"
+            android:textColorHint="@android:color/darker_gray"
+            android:textAlignment="center"
+            android:paddingRight="20dp"
+            android:background="@drawable/round_border"
+            android:id="@+id/select_dateid"
+            android:textColor="@android:color/black"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/round_border"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:id="@+id/edt_mi_collectionid"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:paddingRight="20dp"
+            android:hint="Mi Collection"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/round_border"
+            android:inputType="numberDecimal"
+            android:id="@+id/edt_depo_collectionid"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:paddingRight="20dp"
+            android:hint="Deposit Collection"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_submit"
+            android:text="Submit" />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

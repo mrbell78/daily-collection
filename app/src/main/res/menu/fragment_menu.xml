@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/searchid"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.AppCompatTextView"
+        />
+    <item
+        android:id="@+id/logoutid"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        app:showAsAction="collapseActionView|ifRoom"/>
+
+</menu>
